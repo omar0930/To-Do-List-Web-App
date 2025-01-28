@@ -1,0 +1,116 @@
+/* Global styling to reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container with gradient background */
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #0a283b, #b03ddd); 
+    padding: 10px;
+}
+
+/* Styling for the to-do app container */
+.todo-app {
+    width: 100%;
+    max-width: 540px;   
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+/* Header styling */
+.todo-app h2 {
+    color: #0a283b;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.todo-app h2 img {
+    width: 35px;
+    margin-left: 10px;
+}
+
+/* Input field and button styling */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    padding: 5px 10px; 
+    margin-bottom: 25px;
+    gap: 10px; 
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 14px 40px; 
+    transition: 0.3s ease-in-out; 
+}
+
+/* Button hover effect */
+button:hover {
+    background: #e14b3b;
+}
+
+/* List styling */
+ul {
+    list-style: none; 
+    padding-left: 20px; 
+}
+
+ul li {
+    position: relative; 
+    font-size: 17px;
+    padding: 12px 8px 12px 50px; 
+    user-select: none;
+}
+
+/* Custom bullet points */
+ul li::before {
+    content: '';
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+    background-image: url("istockphoto-1271136058-612x612.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* Strikethrough effect for checked tasks */
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("istockphoto-944026802-612x612.jpg");
+}
+
+/* Hover effect for list items */
+ul li:hover {
+    background: #093da5; /* Light background on hover */
+    cursor: pointer;
+}
