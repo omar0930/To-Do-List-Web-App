@@ -9,7 +9,7 @@ This is a simple To-Do list web app built with HTML and CSS. It allows users to 
 
 ## Installation
 
-1. Clone this repository to your local machine using:
+1. Clone this repository to your local machine using:-
    ```bash
    git clone https://github.com/omar0930/todo-list.git
 ## Technologies Used
